@@ -1,0 +1,48 @@
+body
+{
+    margin: 0%;
+}
+
+.header
+{
+    height: 80px;
+}
+
+#faixa-1, #faixa-2
+{
+    height: 15%;
+    min-width: 100%;
+}
+
+#faixa-1
+{
+    background-color: rgb(124, 124, 124);
+}
+
+#faixa-2
+{
+    background-color: rgba(124, 124, 124, 0.699);
+}
+
+#nav-cabecalho
+{
+    text-align: center;
+    min-height: 50%;
+    padding-left: 60%;
+    background-color: rgba(124, 124, 124, 0.178);
+}
+
+#nav-cabecalho a
+{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.623);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*.nav-cabecalho
+{
+
+}
+*/

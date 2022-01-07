@@ -44,7 +44,7 @@ console.log(`SEGUNDA CHAMADA = ${dependeQuantidade()}`)
 console.log(`TERCEIRA CHAMADA = ${dependeQuantidade()}`)
 }
 
-/*VOLTA ESCOPO 1*/
+/*VOLTA ESCOPO GLOBAL*/
 console.log(`${qtd}`)
 console.log(`${pmt}`)
 ```
@@ -55,6 +55,6 @@ No ESCOPO 2, a variável está definida e com um tipo de dado já inserido, conf
 
 Todavia, a saída depois da função chamando uma variável do tipo let (pmt) já ocasionaria um erro(ESCOPO 1), visto que ela não estaria definida - tudo por conta de pmt não possuir relacionamento de filho com essa saída de fora do escopo da função
 
-Isso também aconteceria com a linha que procede o fechamento desse escopo (VOLTA ESCOPO 1), mas não teria erro com relação a variável qtd
+Isso também aconteceria com a linha que procede o fechamento desse escopo (VOLTA ESCOPO GLOBAL), mas não teria erro com relação a variável qtd
 
 ---

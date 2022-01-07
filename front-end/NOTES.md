@@ -1,14 +1,51 @@
-# Anotações | FRONT-END
-
-## HTML
-
----
-
-## CSS
-
----
+# Anotações | Javascript
 
 ## JS
+
+### Funções
+
+As funções podem ser construídas de 2 diferentes maneiras
+
+```js
+
+cosnt test = function(){
+    return 'função em expressão'
+}
+
+function test(){
+    return 'função declarada'
+}
+
+```
+
+**Observação**: em funções declaradas podemos chamá-la antes da linha de declaração - isso por conta do hoisting; enquanto em funções de expressão isso não ocorre
+
+Exemplo:
+
+```js
+
+// console.log(`${x()}`)
+const x = function(){
+    return 'x = 0'
+}
+
+
+console.log(`${y()}`)
+function y(){
+    return 'y = 0'
+}
+
+```
+
+Na linha comentada, o erro seria o seguinte: 
+
+```
+
+Cannot access 'x' before initialization
+
+```
+
+---
 
 ### Tipos de Variáveis
 
@@ -91,14 +128,15 @@ A saída desse bloco de javascript seria:
 0
 1 na 1 chamada
 1 na 1 chamada
+1 na 1 chamada
 ```
 
 Entendendo: diferentemente do exemplo anterior, nesse bloco:
 * criamos uma variável let **qtd**
-* criamos uma função que vai receber **qtd** como parametro
+* criamos uma função que vai receber **qtd**(não o mesmo que a variável) como parametro
 * convocamos a função enviando a variável let **qtd** como argumento
-* função vai receber essa variavel como parametro, na condição irá atribuir 0 à variável pmt (do tipo let) - visto que o parametro que ele está analisando (nosso argumento) ainda possui valor 0
-* o parametro **dentro da função** vai adicionar 1 ao seu valor
+* função vai receber essa variavel como **parametro**, na condição irá atribuir 0 à variável pmt (do tipo let) - visto que o **parametro** que ele está **em condição** (nosso argumento) ainda possui valor 0
+* o parametro **dentro da função** vai receber +1 ao seu valor (como cada vez que chamamos a função temos que qtd vale 0, na mensagem de retorno sempre possuirá valor 1)
 * retorna a mensagem
 * invocamos novamente a função que vai enviar o mesmo argumento (variável **qtd**)
 * percebe-se que o valor desse argumento não foi alterado, o que foi alterado foi o parametro DENTRO DA FUNÇÃO

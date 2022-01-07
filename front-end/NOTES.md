@@ -165,7 +165,8 @@ Entendendo: diferentemente do exemplo anterior, nesse bloco:
 * convocamos a função enviando a variável let **qtd** como argumento
 * função vai receber essa variavel como **parametro**, na condição irá atribuir 0 à variável pmt (do tipo let) - visto que o **parametro** que ele está **em condição** (nosso argumento) ainda possui valor 0
 * o parametro **dentro da função** vai receber +1 ao seu valor (como cada vez que chamamos a função temos que qtd vale 0, na mensagem de retorno sempre possuirá valor 1)
-* *caso não definissemos qtd como parametro da função, o incremento seria referente a variavel qtd (do escopo global) e assim nosso parametro iria aumentar a cada chamada da função dependeQuantidade()*
+
+*caso não definissemos qtd como parametro da função, o incremento seria referente a variavel qtd (do escopo global) e assim nosso parametro iria aumentar a cada chamada da função dependeQuantidade()*
 * retorna a mensagem
 * invocamos novamente a função que vai enviar o mesmo argumento (variável **qtd**)
 * percebe-se que o valor desse argumento não foi alterado, o que foi alterado foi o parametro DENTRO DA FUNÇÃO

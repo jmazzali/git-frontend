@@ -10,7 +10,7 @@
 
 ## JS
 
-# TIPOS DE VARIÁVEIS
+### TIPOS DE VARIÁVEIS
 
 * let
 As variáveis declaradas como let, podem ser acessadas apenas após sua declaração em seu escopo principal (ou filhos - o inverso não funciona, por exemplo existe a variavel let X em um escopo fechado, fora dele (no pai) não vai exisitir). Exemplificando:

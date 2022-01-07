@@ -25,7 +25,7 @@ Exemplo:
 ```js
 
 // console.log(`${x()}`)
-const x = function(){
+const x = function nome_função(){
     return 'x = 0'
 }
 
@@ -42,6 +42,32 @@ Na linha comentada, o erro seria o seguinte:
 ```
 
 Cannot access 'x' before initialization
+
+```
+
+Em funções construidas apartir da expressão, o nome da função em si não interfere na chamada - apenas ajuda na identificação
+
+O retorno da função será armazendao na função
+
+```js
+
+const test = function esse_nome_nao_interfere(){
+    let x = 'ABC'
+    return 'em expressão'
+}
+
+console.log(`${test()}`)
+
+console.log(`Quando criamos em expressão o nome da função ajuda com identificação, mas na hora da chamada não interfere`)
+console.log(`${test}`)
+
+```
+em expressão
+Quando criamos em expressão o nome da função ajuda com identificação, mas na hora da chamada não interfere
+function esse_nome_nao_interfere(){
+    let x = 'ABC'
+    return 'em expressão'
+}
 
 ```
 

@@ -12,7 +12,7 @@
 
 ### Tipos de Variáveis
 
-* let (é key sensitive)
+* let
 
 As variáveis declaradas como let, podem ser acessadas apenas após sua declaração em seu escopo principal (ou filhos - o inverso não funciona, por exemplo existe a variavel let X em um escopo fechado, fora dele (no pai) não vai exisitir). Exemplificando:
 
@@ -55,6 +55,7 @@ Todavia, a saída depois da função chamando uma variável do tipo let (pmt) j�
 
 Isso também aconteceria com a linha que procede o fechamento desse escopo (VOLTA ESCOPO GLOBAL), mas não teria erro com relação a variável qtd
 
+---
 ### Enviando argumentos para funções
 
 Para isso vamos usar o exemplo base do tópico acima, mas com novas alterações
@@ -96,11 +97,11 @@ Entendendo: diferentemente do exemplo anterior, nesse bloco:
 * criamos uma variável let **qtd**
 * criamos uma função que vai receber **qtd** como parametro
 * convocamos a função enviando a variável let **qtd** como argumento
-* * função vai receber essa variavel como parametro, na condição irá atribuir 0 à variável pmt (do tipo let) - visto que o parametro que ele está analisando (nosso argumento) ainda possui valor 0
-* * o parametro **dentro da função** vai adicionar 1 ao seu valor
-* * retorna a mensagem
+* função vai receber essa variavel como parametro, na condição irá atribuir 0 à variável pmt (do tipo let) - visto que o parametro que ele está analisando (nosso argumento) ainda possui valor 0
+* o parametro **dentro da função** vai adicionar 1 ao seu valor
+* retorna a mensagem
 * invocamos novamente a função que vai enviar o mesmo argumento (variável **qtd**)
-* * percebe-se que o valor desse argumento não foi alterado, o que foi alterado foi o parametro DENTRO DA FUNÇÃO
+* percebe-se que o valor desse argumento não foi alterado, o que foi alterado foi o parametro DENTRO DA FUNÇÃO
 
 Portanto, deve-se atentar no bloco que, apesar do mesmo nome de variável, existe uma diferença entre nosso argumento (originado da nossa variável let no escopo global) e o parâmetro que é manipulado internamente
 
